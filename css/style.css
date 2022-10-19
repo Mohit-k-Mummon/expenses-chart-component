@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap');
 
 /****************** 
     CSS VARIABLES
@@ -40,6 +40,118 @@ img {
 
 
 
+
 /****************** 
         MAIN
 ******************/
+body {
+    background-color: var(--Cream);
+    min-height: 100vh;
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.6rem;
+}
+
+.expenses {
+    width: 100%;
+    height: 53.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 55rem;
+}
+
+
+
+
+/****************** 
+    BALANCE
+******************/
+.expenses__balance {
+    background-color: var(--Soft-red);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2.4rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.expenses__balance .balance {
+    line-height: 1.5;
+}
+
+.expenses__balance .balance-heading {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.expenses__balance .account-balance {
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.expenses__balance .logo {
+    max-width: 6.2rem;
+}
+
+
+
+
+/****************** 
+    SPENDING
+******************/
+.expenses__spending {
+    background-color: #fff;
+    padding: 2.2rem;
+    border-radius: 10px;
+    flex-grow: 2;
+    height: min-content;
+}
+.expenses__spending .heading {
+    color: var(--Dark-brown);
+    font-size: 2.4rem;
+    margin-bottom: 5rem;
+}
+
+.expenses__spending .divider {
+    background-color: rgb(224, 224, 224);
+    height: 1px;
+    margin-top: 2rem;
+}
+
+.expenses__spending .footer-container {
+    display: flex;
+    margin-top: 3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container .total :nth-child(1) {
+    font-weight: normal;
+    color: #a6a19b;
+    font-size: 1.6rem;
+}
+
+.total :nth-child(2) {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.percentage {
+    text-align: right;
+    line-height: 1.5;
+}
+
+.percentage :nth-child(1) {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.percentage :nth-child(2){
+    color: #a6a19b;
+    font-size: 1.6rem;
+}
